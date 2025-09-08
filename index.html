@@ -1,97 +1,268 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Velix Technologies – IT Services in Moradabad</title>
-  <meta name="description" content="Velix Technologies: Web development, mobile apps, IT consulting, OS/software/antivirus installation in Moradabad.">
+  <title>Velix Technologies – Web & App Development, IT Services in Moradabad</title>
+  <meta name="description"
+    content="Velix Technologies: web development, mobile apps, IT consulting, OS/software/antivirus installation. Moradabad-based, serving clients across India.">
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="/assets/img/logo.jpg?v=2">
+
   <style>
-    :root{--brand:#0e3a6f;--ink:#0b1220}
-    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Inter,Arial;background:#f7fafc;color:var(--ink)}
-    header{background:var(--brand);color:#fff;padding:20px}
-    .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
-    .hero{padding:36px 0}
-    .card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 6px 20px rgba(0,0,0,.06);margin:16px 0}
-    .grid{display:grid;gap:16px} @media(min-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
-    .wa{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:999px;padding:14px 18px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.18)}
-    ul{margin:0;padding-left:18px}
-    nav a{color:#fff;text-decoration:none;margin-right:16px;font-weight:600}
-    footer{padding:24px 0;color:#556}
+    :root {
+      --brand: #0e3a6f;
+      --ink: #0b1220
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: #f7fafc;
+      color: var(--ink)
+    }
+
+    header {
+      background: var(--brand);
+      color: #fff;
+      padding: 16px 0
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .brand img {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      object-fit: cover
+    }
+
+    .brand .name {
+      font-size: 22px;
+      font-weight: 800
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600
+    }
+
+    .hero {
+      padding: 40px 0
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+      margin: 16px 0
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px
+    }
+
+    @media(min-width:880px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700
+    }
+
+    .btn.alt {
+      background: #10b981
+    }
+
+    .wa {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 999px;
+      padding: 14px 18px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .18)
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px
+    }
+
+    footer {
+      padding: 26px 0;
+      color: #556;
+      text-align: center
+    }
+
+    .pill {
+      display: inline-block;
+      background: #eef2ff;
+      color: #223;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin: 4px 6px 0 0;
+      font-weight: 600;
+      font-size: 13px
+    }
   </style>
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Velix Technologies",
+    "image":"https://www.velixtechnologies.com/assets/img/logo.jpg",
+    "url":"https://www.velixtechnologies.com",
+    "telephone":"+919970959579",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Moradabad",
+      "addressRegion":"UP",
+      "postalCode":"244001",
+      "addressCountry":"IN"
+    },
+    "areaServed":"India",
+    "sameAs":[
+      "https://wa.me/919970959579"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-<header>
-  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-    <div style="font-size:22px;font-weight:800">Velix Technologies</div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <section class="hero">
-    <div class="card">
-      <h1 style="margin:0 0 10px">Your IT Partner for Web, Apps & Support</h1>
-      <p style="margin:0 0 16px">
-        We build small or big <b>web applications</b>, <b>mobile apps</b>, and provide
-        <b>IT consulting</b> & <b>business automation</b>.
-        We also handle <b>operating system installation</b> (Windows, Linux, Ubuntu, Linux Mint),
-        <b>software installation</b>, and <b>antivirus setup</b>.
-      </p>
-      <a class="btn" href="#services">See Services</a>
-      <a class="btn" style="background:#10b981;margin-left:8px" target="_blank"
-         href="https://wa.me/919970959579?text=Hi%20Velix%20Technologies%2C%20I%20have%20a%20requirement.">WhatsApp us</a>
+  <!-- HEADER -->
+  <header>
+    <div class="wrap row">
+      <div class="brand">
+        <img src="/assets/img/logo.jpg?v=2" alt="Velix Technologies logo">
+        <div class="name">Velix Technologies</div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <section id="services" class="grid">
-    <div class="card">
-      <h3>Web Development</h3>
-      <ul>
-        <li>Custom websites & business portals</li>
-        <li>Responsive, secure, scalable</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Mobile App Development</h3>
-      <ul>
-        <li>Android & iOS apps</li>
-        <li>Web & app integration</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Computer Setup & Security</h3>
-      <ul>
-        <li>OS install: Windows / Ubuntu / Linux Mint</li>
-        <li>Software & antivirus installation</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>IT Consulting & Automation</h3>
-      <ul>
-        <li>Process automation & tech strategy</li>
-        <li>Support for startups & SMBs</li>
-      </ul>
-    </div>
-  </section>
+  <!-- MAIN -->
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1 style="margin:0 0 10px">Your IT Partner for Web, Apps & Support</h1>
+        <p style="margin:0 0 16px">
+          We build small or big <b>web applications</b>, <b>mobile apps</b>, and provide
+          <b>IT consulting</b> & <b>business automation</b>.
+          We also handle <b>operating system installation</b> (Windows, Linux, Ubuntu, Linux Mint),
+          <b>software installation</b>, and <b>antivirus setup</b>.
+        </p>
+        <a class="btn" href="#services">See Services</a>
+        <a class="btn alt" style="margin-left:8px" target="_blank"
+          href="https://wa.me/919970959579?text=Hi%20Velix%20Technologies%2C%20I%20have%20a%20requirement.">WhatsApp
+          us</a>
+        <div style="margin-top:14px">
+          <span class="pill">Website Development</span>
+          <span class="pill">Mobile App Development</span>
+          <span class="pill">OS Installation (Windows/Linux)</span>
+          <span class="pill">Software & Antivirus Setup</span>
+          <span class="pill">IT Consulting</span>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Moradabad, Uttar Pradesh · Serving clients across India</p>
-    <p><b>WhatsApp:</b> <a target="_blank" rel="noopener" href="https://wa.me/919970959579">+91 9970959579</a></p>
-    <p><b>Website:</b> velixtechnologies.com</p>
-  </section>
-</main>
+    <!-- SERVICES -->
+    <section id="services" class="grid">
+      <div class="card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>Custom websites & business portals</li>
+          <li>Responsive, secure, scalable</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Mobile App Development</h3>
+        <ul>
+          <li>Android & iOS apps</li>
+          <li>Web & app integration</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Computer Setup & Security</h3>
+        <ul>
+          <li>OS install: Windows / Ubuntu / Linux Mint</li>
+          <li>Software installation & antivirus setup</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IT Consulting & Automation</h3>
+        <ul>
+          <li>Process automation & tech strategy</li>
+          <li>Support for startups & SMBs</li>
+        </ul>
+      </div>
+    </section>
 
-<a class="wa" target="_blank" rel="noopener"
-   href="https://wa.me/919970959579?text=Hi%20Velix%20Technologies%2C%20I%20need%20assistance.">💬 WhatsApp</a>
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Moradabad, Uttar Pradesh · Serving clients across India</p>
+      <p><b>WhatsApp:</b> <a target="_blank" rel="noopener"
+          href="https://wa.me/919970959579">+91 9970959579</a></p>
+      <p><b>Email:</b> info@velixtechnologies.com (optional if you add later)</p>
+      <p><b>Website:</b> velixtechnologies.com</p>
+    </section>
+  </main>
 
-<footer>
-  <div class="wrap">© <span id="y"></span> Velix Technologies · Moradabad</div>
-</footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <!-- WHATSAPP FLOAT -->
+  <a class="wa" target="_blank" rel="noopener"
+    href="https://wa.me/919970959579?text=Hi%20Velix%20Technologies%2C%20I%20need%20assistance.">💬 WhatsApp</a>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">© <span id="y"></span> Velix Technologies · Moradabad</div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
